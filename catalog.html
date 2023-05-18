@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Каталог</title>
+
+   <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+   <link rel="manifest" href="img/favicon/site.webmanifest">
+   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <link rel="shortcut icon" href="img/favicon/favicon.ico">
+   <meta name="msapplication-TileColor" content="#2b5797">
+   <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+   <meta name="theme-color" content="#ffffff">
+
+   <link rel="stylesheet" href="./css/reset_ls.css">
+   <link rel="stylesheet" href="./css/catalog_style.css">
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+         <nav class="nav">
+            <ul class="ul">
+               <li class="nav__link header__hover">
+                  <a href="#!" class="nav__link-text margin-right">Контрагентам</a>
+               </li>
+               <li class="nav__link header__hover">
+                  <a href="#!" class="nav__link-text margin-right">Дизайнерам</a>
+               </li>
+               <li class="nav__link header__hover">
+                  <a href="#!" class="nav__link-text">Вакансии</a>
+               </li>
+            </ul>
+
+            <a href="#!" class="nav__logo">
+               <img src="./img/logo.svg" alt="img logo" class="logo">
+            </a>
+
+            <div class="nav__account">
+
+               <div class="account__search">
+                  <a href="#!" class="search__link header__hover">
+                     <img src="./img/icon/1.png" alt="img" class="search_icon">
+                  </a>
+                  <a href="#!" class="search__link-text header__hover">
+                     <div class="search_text">Поиск</div>
+                  </a>
+               </div>   <!-- account__search -->
+
+               <div class="account__sign">
+                  <a href="#!" class="sign__link header__hover">
+                     <p class="sign__link_text">Авторизация/Поиск</p>
+                  </a>
+               </div>   <!-- account__sign -->
+
+               <div class="account__icon">
+                  <a href="#!" class="account__icon-link">
+                     <img src="./img/icon/2.png" alt="hz" class="icon_people">
+                  </a>
+                  <a href="#!" class="like__icon-link">
+                     <img src="./img/icon/3.png" alt="hz" class="icon_like">
+                  </a>
+               </div>   <!-- account__icon -->
+
+            </div> <!-- nav__account -->
+         </nav> <!-- nav -->
+      </div> <!-- container -->
+   </header> <!-- header -->
+
+   <!-- nav__sorting start -->
+
+   <section id="catalog__selection" class="nav__sorting">
+      
+      <div class="container">
+
+         <div class="sorting__content">
+            <!-- список сортировки по бренду -->
+         <p><select class="brands" name="brands">
+            <option class="name_brands" value="r0">Бренд</option>
+            <optgroup class="name_country" label="Италия">
+               <option class="name_brands" value="r1">Gucci</option>
+               <option class="name_brands" value="r2">D&G</option>
+               <option class="name_brands" value="r3">Pandora</option>
+               <option class="name_brands" value="r4">Tiffany & Co.</option>
+               <option class="name_brands" value="r5">Cartier</option>
+               <option class="name_brands" value="r6">Bulgari</option> 
+            </optgroup>
+            <optgroup class="name_country" label="Англия">
+               <option class="name_brands" value="r7">Gucci</option>
+               <option class="name_brands" value="r8">D&G</option>
+               <option class="name_brands" value="r9">Pandora</option>
+              </optgroup>
+            <optgroup class="name_country" label="Франция">
+               <option class="name_brands" value="r10">Tiffany & Co.</option>
+               <option class="name_brands" value="r11">Cartier</option>
+               <option class="name_brands" value="r12">Bulgari</option> 
+           </optgroup>
+           </select></p>
+           <!-- список сортировки по бренду -->
+
+           <!-- список сортировки по цене -->
+           <p><select class="brands" name="brands">
+            <option class="name_brands" value="p0">Цена</option>
+            <optgroup class="name_country" label="Выбериет цену">
+               <option class="name_brands" value="p1">До 50 000 ₽</option>
+               <option class="name_brands" value="p2">До 100 000 ₽ </option>
+               <option class="name_brands" value="p3">До 250 000 ₽</option>
+               <option class="name_brands" value="p4">До 500 000 ₽</option>
+               <option class="name_brands" value="p5">До 1000 000 ₽</option>
+               <option class="name_brands" value="p6">До 5000 000 ₽</option> 
+            </optgroup>
+           </select></p>
+                      <!-- список сортировки по цене -->
+
+                      <!-- сортировка по назначению -->
+           <p><select class="brands" name="brands">
+            <option class="name_brands" value="c0">Для кого</option>
+            <optgroup class="name_country" label="Выбериет один из вариантов">
+               <option class="name_brands" value="c1">Мужчинам</option>
+               <option class="name_brands" value="c2">Женщинам</option>
+               <option class="name_brands" value="c3">Подросткам</option>
+               <option class="name_brands" value="c4">Детям</option>
+               <option class="name_brands" value="c5">Модным</option>
+               <option class="name_brands" value="c6">Стильным</option> 
+            </optgroup>
+           </select></p>
+                                 <!-- сортировка по назначению -->
+                                 <!-- сортировка по коллекциям -->
+           <p><select class="brands" name="brands">
+            <option class="name_brands" value="c0">Коллекия</option>
+               <optgroup class="name_country" label="Италия">
+                  <option class="name_brands" value="с1">Уральские Самоцветы</option>
+                  <option class="name_brands" value="с2">Кольца с бриллиантами 1 карат</option>
+                  <option class="name_brands" value="с3">Авторские украшения</option>
+               </optgroup>
+               <optgroup class="name_country" label="Англия">
+                  <option class="name_brands" value="с4">Premium Diamonds</option>
+                  <option class="name_brands" value="с5">Premium Diamonds</option>
+                  <option class="name_brands" value="с6">Premium Diamonds</option>
+                 </optgroup>
+               <optgroup class="name_country" label="Франция">
+                  <option class="name_brands" value="с7">Premium Diamonds</option>
+                  <option class="name_brands" value="с8">Premium Diamonds</option>
+                  <option class="name_brands" value="с9">Premium Diamonds</option> 
+              </optgroup>
+           </select></p>
+                                            <!-- сортировка по коллекциям -->
+            <p><select class="brands" name="brands">
+            <option class="name_brands" value="f0">Сезон</option>
+            <optgroup class="name_country" label="Выбериет сезон">
+               <option class="name_brands" value="f1">Зима</option>
+               <option class="name_brands" value="f2">Лето</option>
+               <option class="name_brands" value="f3">Осень</option>
+               <option class="name_brands" value="f4">Весна</option>
+            </optgroup>
+           </select></p>
+                             <!-- сортировка по коллекциям -->
+
+                             <!-- сортировкам по собитиям -->
+
+           <p><select class="brands" name="brands">
+            <option class="name_brands" value="f0">Событие</option>
+            <optgroup class="name_country" label="Выбериет по какому событию">
+               <option class="name_brands" value="f1">Свадьба</option>
+               <option class="name_brands" value="f2">День рождение</option>
+               <option class="name_brands" value="f3">Предложение</option>
+               <option class="name_brands" value="f4">8 марта</option>
+            </optgroup>
+           </select></p>
+                             <!-- сортировкам по собитиям -->
+         </div>
+      </div>
+   </section> <!-- nav__sorting end -->
+
+   <!-- catalogs start -->
+   
+   <section class="catalogs">
+      <div class="container">
+         <div class="catalog__content">
+
+            <div class="catalog__content-line">
+
+               <a href="./producrs.html" class="catalog__link">
+                  <img src="./img/catalog/index catalog/1.jpg" alt="hz" class="catalog__pic">
+                  <div class="catalog__info">
+                     <div class="info">Подвеска</div>
+                     <div class="name">Dolce & Gabanna</div>
+                     <button class="button__price">175 000 ₽</button>
+                  </div>
+               </a>
+
+               <a href="./producrs.html" class="catalog__link">
+                  <img src="./img/catalog/index catalog/1.jpg" alt="hz" class="catalog__pic">
+                  <div class="catalog__info">
+                     <div class="info">Подвеска</div>
+                     <div class="name">Dolce & Gabanna</div>
+                     <button class="button__price">175 000 ₽</button>
+                  </div>
+               </a>
+
+               <a href="./producrs.html" class="catalog__link">
+                  <img src="./img/catalog/index catalog/1.jpg" alt="hz" class="catalog__pic">
+                  <div class="catalog__info">
+                     <div class="info">Подвеска</div>
+                     <div class="name">Dolce & Gabanna</div>
+                     <button class="button__price">175 000 ₽</button>
+                  </div>
+               </a>
+
+            </div><!-- catalog__content-line -->
+
+            <div class="direct"></div> <!-- прямая между контентом -->
+
+            <div class="catalog__content-line">
+
+               <a href="./producrs.html" class="catalog__link">
+                  <img src="./img/catalog/index catalog/1.jpg" alt="hz" class="catalog__pic">
+                  <div class="catalog__info">
+                     <div class="info">Подвеска</div>
+                     <div class="name">Dolce & Gabanna</div>
+                     <button class="button__price">175 000 ₽</button>
+                  </div>
+               </a>
+
+               <a href="./producrs.html" class="catalog__link">
+                  <img src="./img/catalog/index catalog/1.jpg" alt="hz" class="catalog__pic">
+                  <div class="catalog__info">
+                     <div class="info">Подвеска</div>
+                     <div class="name">Dolce & Gabanna</div>
+                     <button class="button__price">175 000 ₽</button>
+                  </div>
+               </a>
+
+               <a href="./producrs.html" class="catalog__link">
+                  <img src="./img/catalog/index catalog/1.jpg" alt="hz" class="catalog__pic">
+                  <div class="catalog__info">
+                     <div class="info">Подвеска</div>
+                     <div class="name">Dolce & Gabanna</div>
+                     <button class="button__price">175 000 ₽</button>
+                  </div>
+               </a>
+
+            </div><!-- catalog__content-line -->
+
+           <div class="catalog__still">
+               <button class="still__line">ПОКАЗАТЬ ЕЩЕ</button>
+           </div>
+         </div> <!-- catalog__content -->
+      </div>
+   </section> <!-- catalogs end -->
+
+   <section class="description">
+      <div class="container">
+
+         <div class="description__content">
+            <div class="description__info">
+               <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, lorem eu commodo porttitor erat. Amet mauris cursus bibendum in egestas. Nulla porttitor amet quam elit, mauris. Tortor egestas dignissim augue suspendisse rutrum pretium lobortis dolor. Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.
+                  Commodo sagittis at amet faucibus faucibus id. Bibendum placerat convallis gravida eu quisque et augue. Sed dignissim amet ut vitae at ornare sed.</p>
+               <button class="description__btn">читать полностью</button>
+            </div> <!-- description__info -->
+      
+            <div class="description__line">
+      
+               <div class="description__item">
+                  <img src="./img/catalog/catalog icon/1.svg" alt="hz" class="description__icon">
+                  <div class="description__item-text">Бесплатная
+                     доставка</div>
+               </div>
+      
+               <div class="description__item">
+                  <img src="./img/catalog/catalog icon/2.svg" alt="hz" class="description__icon">
+                  <div class="description__item-text">Индивидуальный
+                     дизайн</div>
+               </div>
+      
+               <div class="description__item">
+                  <img src="./img/catalog/catalog icon/3.svg" alt="hz" class="description__icon">
+                  <div class="description__item-text">Бесплатная
+                     примерка</div>
+               </div>
+      
+               <div class="description__item">
+                  <img src="./img/catalog/catalog icon/4.svg" alt="hz" class="description__icon">
+                  <div class="description__item-text">Личный
+                     подход</div>
+               </div>
+      
+            </div>
+         </div><!-- description__content -->
+
+      </div><!-- container -->
+
+   </section>
+
+   <section class="mlg">
+      <div class="container">
+         <div class="mlg__content">
+            <div class="mlg__title">
+               <div class="mlg__title-items">Полезные советы и персональный предложения</div>
+               <div class="mlg__title-text">Эксклюзивная рассылка</div>
+            </div>
+            <div class="mlg__form">
+               <div class="mlg__form-info">
+                  <div class="form-info_text mlg-background">Личный менеджер</div>
+                  <div class="form-info_text mlg-background">Доставка и оформление</div>
+                  <div class="form-info_text mlg-background">Индивидуальный дизайн</div>
+               </div>
+               <div class="mlg__form-line">
+                  <div class="mlg__form-input">
+                     <!-- ваш емаил -->
+                     <input class="mlg-input" type="email" placeholder="Ваш e-mail" />
+                     <!-- отправить -->
+                     <button class="btn-input">отправить</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__content">
+
+            <div class="footer__link"> <!-- блок 1 -->
+               <div class="footer__link-title">
+                  Полезные ссылки
+               </div>
+               <div class="footer__link-text">
+                  <a href="#!" class="footer__link-item">Доставка</a>
+                  <a href="#!" class="footer__link-item">Оплата</a>
+                  <a href="#!" class="footer__link-item">Акции</a>
+                  <a href="#!" class="footer__link-item">Политика конфиденциальности</a>
+               </div>
+            </div> <!-- блок 1 -->
+
+            <div class="footer__link"><!-- блок 2 -->
+               <div class="footer__link-title">
+                  Оплата
+               </div>
+               <div class="footer__link-text">
+                  <div class="footer__link-item">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+                  </div>
+               </div>
+               <div class="footer__link-ico">
+                  <img src="./img/icon/footer/1.png" alt="" class="visa">
+                  <img src="./img/icon/footer/2.png" alt="" class="master">
+               </div>
+            </div> <!-- блок 2 -->
+
+            <div class="footer__link"> <!-- блок 3 -->
+               <div class="footer__link-title">
+                  Контакты
+               </div>
+               <div class="footer__link-text">
+                  <div class="numb">8 (812) 234-56-55</div>
+                  <div class="numb">8 (812) 234-56-55</div>
+                  <div class="email">ojjo@ojjo.ru</div>
+               </div>
+               <!-- <div class="footer__link-img">
+                  <img src="./img/icon/footer/3.png" alt="hz" class="tel">
+                  <img src="./img/icon/footer/3.png" alt="hz" class="tel">
+                  <img src="./img/icon/footer/4.png" alt="hz" class="email">
+               </div> -->
+            </div> <!-- блок 3 -->
+
+            <div class="footer__link"> <!-- блок 4 -->
+               <div class="footer__link-title">
+                  Социальные сети
+               </div>
+               <div class="footer__link-text">
+                  <div class="footer__link-item">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+                  </div>
+               </div>
+               <div class="footer__link-img">
+                  <a href="https://vk.com/itproakula" class="yooutube"><img src="./img/icon/footer/5.png" alt="hz" class="indent"></a>
+                  <a href="https://vk.com/itproakula" class="vk"><img src="./img/icon/footer/6.png" alt="hz" class="indent"></a>
+                  <a href="https://vk.com/itproakula" class="facebook"><img src="./img/icon/footer/7.png" alt="hz" class="indent"></a>
+                  <a href="https://vk.com/itproakula" class="telegram"><img src="./img/icon/footer/8.png" alt="hz" class="indent"></a>
+                  <a href="https://vk.com/itproakula" class="etsy"><img src="./img/icon/footer/9.png" alt="hz" class="indent"></a>
+               </div>
+            </div> <!-- блок 4 -->
+
+         </div><!-- footer__content -->
+
+         <div class="footer__info">
+            <div class="cap">(c) 2020 OJJO jewelry</div>
+            <a href="#!" class="cap">Договор публичной офферты</a>
+            <a href="#!" class="cap">Контрагентам</a>
+            <div class="cap cap_weight">Сделано Figma.info</div>
+         </div>
+
+      </div>
+   </footer> 
+
+
+
+</body>
+</html>
